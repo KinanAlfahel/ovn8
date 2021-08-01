@@ -12,3 +12,7 @@ font-size: xx-large;
     display:flex;
     position: sticky;
 }
+.grid-container {
+    display: inline-grid;
+    margin-top: 100px;
+  }
