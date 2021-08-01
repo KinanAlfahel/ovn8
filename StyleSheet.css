@@ -1,0 +1,14 @@
+body
+{
+background-color: rgb(172, 132, 132);
+
+}
+h3
+{
+font-size: xx-large;
+}
+
+.navbar{
+    display:flex;
+    position: sticky;
+}
