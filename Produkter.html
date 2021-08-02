@@ -9,110 +9,231 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <style>
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              background-color: #a6cef0;
+              padding: 10px;
+            }
+            .grid-item {
+              background-color: rgba(255, 255, 255, 0.8);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 20px;
+              font-size: 30px;
+              text-align: center;
+            }
+            </style>
       </head>
       <body style="background-color: rgb(196, 206, 179);">
-        <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
-        <a href="#" class="navbar-brand">KinKoff</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="navbar-item">
-                    <a href="Index.html">Home Page  </a>
-                </li>
-                </p>
-                <li class="navbar-item">
-                    <a href="Produkter.html">Produkter   </a>
-                </li>
-                <li class="navbar-item">
-                <a href="Omoss.html">Omoss  </a>
-                </li>
-        </ul>
-    </div>
-    </nav>
-    <div>
-        <div class="container" style="margin-top:30px">
-            
-            <div class="card">
-                <img class="card-img-top" alt="Card header image" src="">
-                <div class="card-body">
-                    <h5 class="card-title">Coffee machine 1</h5>
-                    <p class="card-text">Lorem ipsum dolor</p>
+        <div>
+            <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">KinKoff</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navbar-item">
+                            <a href="Index.html">Home Page</a>
+                        </li>
+                        <li class="navbar-item" style="margin-left: 10px;">
+                            <a href="Produkter.html">Produkter</a>
+                        </li>
+                        <li class="navbar-item"style="margin-left: 10px;">
+                            <a href="Omoss.html">Omoss</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- List group -->
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item One</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="btn btn-primary">add to favourite</a>
-                    <a href="#" class="btn btn-primary">add to cart</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" alt="Card header image" src="">
-                <div class="card-body">
-                    <h5 class="card-title">Coffee machine 2</h5>
-                    <p class="card-text">Lorem ipsum dolor</p>
-                </div>
-                <!-- List group -->
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item One</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="btn btn-primary">add to favourite</a>
-                    <a href="#" class="btn btn-primary">add to cart</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" alt="Card header image" src="">
-                <div class="card-body">
-                    <h5 class="card-title">Coffee machine 3</h5>
-                    <p class="card-text">Lorem ipsum dolor</p>
-                </div>
-                <!-- List group -->
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item One</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="btn btn-primary">add to favourite</a>
-                    <a href="#" class="btn btn-primary">add to cart</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" alt="Card header image" src="">
-                <div class="card-body">
-                    <h5 class="card-title">Coffee machine 4</h5>
-                    <p class="card-text">Lorem ipsum dolor</p>
-                </div>
-                <!-- List group -->
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item One</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="btn btn-primary">add to favourite</a>
-                    <a href="#" class="btn btn-primary">add to cart</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" alt="Card header image" src="">
-                <div class="card-body">
-                    <h5 class="card-title">Coffee machine 5</h5>
-                    <p class="card-text">Lorem ipsum dolor</p>
-                </div>
-                <!-- List group -->
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item One</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="btn btn-primary">add to favourite</a>
-                    <a href="#" class="btn btn-primary">add to cart</a>
-                </div>
-            </div>
+            </nav>
         </div>
-    <div>
-    <footer style="height: 50; background-color: rgb(184, 224, 184);">
-        <p style="font-size: large;"> All rights reserved © KinKoff Company </p>
-    </footer>
-    </div> 
+        <div>
+            <div>
+        <div>
+            
+            <h1>Coffee Machines</h1>
+
+
+
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>  
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>  
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+        <img class="card-img-top" alt="Card header image" src="">
+        <div class="card-body">
+            <h5 class="card-title">Coffee machine 1</h5>
+            <h5 class="card-text">Model Number: 123123</h5>
+        </div>
+        <!-- List group -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Description:</li>
+            <li class="list-group-item">Price: 100</li>
+
+        </ul>
+        <div class="card-body">
+            <a href="#" class="btn btn-primary">add to favourite</a>
+            <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+    </div>
+  </div>
+  <div class="grid-item"><div class="card">
+    <img class="card-img-top" alt="Card header image" src="">
+    <div class="card-body">
+        <h5 class="card-title">Coffee machine 1</h5>
+        <h5 class="card-text">Model Number: 123123</h5>
+    </div>
+    <!-- List group -->
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Description:</li>
+        <li class="list-group-item">Price: 100</li>
+
+    </ul>
+    <div class="card-body">
+        <a href="#" class="btn btn-primary">add to favourite</a>
+        <a href="#" class="btn btn-primary">add to cart</a>
+    </div>
+</div>
+</div>    
+</div>
+        </div>
+            </div>
+            <div>
+                <footer style="height: 50; background-color: rgb(184, 224, 184);">
+                    <p style="font-size: large;"> All rights reserved © KinKoff Company </p>
+                </footer>
+            </div>
+        </div> 
    </body>
